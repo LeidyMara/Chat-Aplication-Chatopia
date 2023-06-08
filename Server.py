@@ -2,6 +2,7 @@ import socket
 import threading
 import pymysql as sql
 from datetime import datetime
+from http.server import BaseHTTPRequestHandler
 
 MYSQL_ADDON_HOST = 'bvniofu42p5iyagxduki-mysql.services.clever-cloud.com'
 MYSQL_ADDON_DB = 'bvniofu42p5iyagxduki'
