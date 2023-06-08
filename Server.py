@@ -14,7 +14,7 @@ MYSQL_ADDON_URI='mysql://ur0djjr0kswx2ypj:ax8HJzAc3T6jQsysAK5m@bvniofu42p5iyagxd
 db_config = {
     'user': MYSQL_ADDON_USER,
     'password': MYSQL_ADDON_PASSWORD,
-    'host': MYSQL_ADDon_HOST,
+    'host': MYSQL_ADDON_HOST,
     'database': MYSQL_ADDON_DB,
     'raise_on_warnings': False
 }
