@@ -283,15 +283,6 @@ class Sala:
         for cliente in self.clientes:
             enviar_mensaje_cliente(cliente, mensaje)
 
-class handler(BaseHTTPRequestHandler):
-
-    def do_GET(self):
-        self.send_response(200)
-        self.send_header('Content-type','text/plain')
-        self.end_headers()
-        self.wfile.write('Hello, world!'.encode('utf-8'))
-        return
-
 def iniciar_servidor():
     host = 'localhost'
     port = 10000
