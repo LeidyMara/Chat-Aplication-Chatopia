@@ -18,7 +18,6 @@ db_config = {
     'host': MYSQL_ADDON_HOST,
     'port': int(MYSQL_ADDON_PORT),
     'database': MYSQL_ADDON_DB,
-    'raise_on_warnings': False
 }
 
 salas = []  # Lista de salas disponibles
@@ -35,7 +34,6 @@ def manejar_conexion(cliente_socket, cliente_direccion):
             opcion = cliente_socket.recv(1024).decode('utf-8')
             if opcion == '1':
                 usuario_registrado = iniciar_sesion(cliente_socket)
-                enviar_mensaje_cliente(cliente_socket, "Control")
             elif opcion == '2':
                 usuario_registrado = registrarse(cliente_socket)
             else:
