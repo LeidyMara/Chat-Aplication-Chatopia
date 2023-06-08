@@ -16,6 +16,7 @@ db_config = {
     'user': MYSQL_ADDON_USER,
     'password': MYSQL_ADDON_PASSWORD,
     'host': MYSQL_ADDON_HOST,
+    'port': int(MYSQL_ADDON_PORT),
     'database': MYSQL_ADDON_DB,
     'raise_on_warnings': False
 }
