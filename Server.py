@@ -3,12 +3,19 @@ import threading
 import pymysql as sql
 from datetime import datetime
 
+MYSQL_ADDON_HOST = bvniofu42p5iyagxduki-mysql.services.clever-cloud.com
+MYSQL_ADDON_DB = bvniofu42p5iyagxduki
+MYSQL_ADDON_USER = ur0djjr0kswx2ypj
+MYSQL_ADDON_PORT = 3306
+MYSQL_ADDON_PASSWORD = ax8HJzAc3T6jQsysAK5m
+MYSQL_ADDON_URI=mysql://ur0djjr0kswx2ypj:ax8HJzAc3T6jQsysAK5m@bvniofu42p5iyagxduki-mysql.services.clever-cloud.com:3306/bvniofu42p5iyagxduki
+
 # Configuración de la base de datos
 db_config = {
-    'user': 'ur0djjr0kswx2ypj',
-    'password': 'ax8HJzAc3T6jQsysAK5m',
-    'host': 'bvniofu42p5iyagxduki-mysql.services.clever-cloud.com',
-    'database': 'bvniofu42p5iyagxduki',
+    'user': MYSQL_ADDON_USER,
+    'password': MYSQL_ADDON_PASSWORD,
+    'host': MYSQL_ADDon_HOST,
+    'database': MYSQL_ADDON_DB,
     'raise_on_warnings': False
 }
 
