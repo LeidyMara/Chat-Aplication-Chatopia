@@ -1,4 +1,3 @@
-socket
 threading
 pymysql
 datetime
